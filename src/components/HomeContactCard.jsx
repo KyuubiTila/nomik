@@ -152,8 +152,8 @@ function HomeContactCard() {
             {/* CTA */}
 
             <Link
-              to="/blog"
-              className="inline-flex w-fit items-center gap-2 rounded-lg border border-blue-400 px-8 py-4 font-semibold transition bg-blue-500 hover:bg-blue-500 hover:text-white"
+              to="/contact"
+              className="inline-flex w-fit items-center mt-4 gap-2 rounded-lg border border-blue-400 px-8 py-4 font-semibold transition bg-blue-500 hover:bg-blue-500 hover:text-white"
             >
               Send Us a Message
               <span>→</span>

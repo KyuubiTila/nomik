@@ -7,6 +7,7 @@ import {
   FaHome,
 } from "react-icons/fa";
 import heroImage from "../assets/images/project1.jpg";
+import { Link } from "react-router-dom";
 
 function HomeCard() {
   return (
@@ -47,11 +48,16 @@ function HomeCard() {
               </button>
             </a>
 
-            <a href="/projects">
-              <button className="rounded-xl border border-slate-300 px-8 py-4 font-semibold text-slate-700 transition hover:border-blue-500 hover:text-blue-500">
-                View Projects
-              </button>
-            </a>
+            <Link
+              to="/projects"
+              className="inline-flex w-fit items-center gap-2 rounded-lg border border-blue-400 px-8 py-4 font-semibold transition hover:bg-blue-500 hover:text-white"
+            >
+              View Projects
+              <span>
+                {" "}
+                <FaArrowRight />
+              </span>
+            </Link>
           </div>
 
           {/* Services */}
