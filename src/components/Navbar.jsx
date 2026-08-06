@@ -11,24 +11,20 @@ function Navbar() {
     { name: "About", hash: "/#about" },
     { name: "Services", hash: "/#services" },
     { name: "Projects", route: "/projects" },
-    { name: "Contact", hash: "/#contact" },
+    { name: "Contact Us", route: "/contact" },
+    { name: "Blog", route: "/blog" },
   ];
 
   return (
     <nav className="fixed top-0 left-0 z-50 w-full bg-white shadow-sm">
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6">
-
         {/* Logo */}
-        <Link
-          to="/#home"
-          className="text-2xl font-bold text-blue-500"
-        >
+        <Link to="/#home" className="text-2xl font-bold text-blue-500">
           NOMIK LTD
         </Link>
 
         {/* Desktop Navigation */}
         <div className="hidden items-center gap-10 md:flex">
-
           <ul className="flex items-center gap-10">
             {links.map((link) => (
               <li key={link.name}>
@@ -66,7 +62,6 @@ function Navbar() {
             MEET OUR TEAM
             <FaArrowRight className="text-sm" />
           </HashLink>
-
         </div>
 
         {/* Mobile Menu Button */}
@@ -76,13 +71,11 @@ function Navbar() {
         >
           {open ? <FaTimes /> : <FaBars />}
         </button>
-
       </div>
 
       {/* Mobile Menu */}
       {open && (
         <div className="space-y-4 bg-white px-6 py-6 shadow-lg md:hidden">
-
           {links.map((link) =>
             link.route ? (
               <NavLink
@@ -103,7 +96,7 @@ function Navbar() {
               >
                 {link.name}
               </HashLink>
-            )
+            ),
           )}
 
           <HashLink
@@ -115,7 +108,6 @@ function Navbar() {
             MEET OUR TEAM
             <FaArrowRight />
           </HashLink>
-
         </div>
       )}
     </nav>

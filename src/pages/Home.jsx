@@ -1,15 +1,15 @@
-import Hero from "../components/HomeCard";
+import HomeCard from "../components/HomeCard";
 import About from "../components/AboutUs";
 import Services from "../components/Services";
-import Contact from "../components/Contact";
+import HomeContact from "../components/HomeContactCard";
 
 function Home() {
   return (
     <>
-      <Hero />
+      <HomeCard />
       <About />
       <Services />
-      <Contact />
+      <HomeContact />
     </>
   );
 }

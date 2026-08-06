@@ -29,10 +29,8 @@ function Footer() {
   return (
     <footer id="footer" className="bg-blue-100 text-gray-800">
       <div className="mx-auto max-w-7xl px-6 py-6">
-
         {/* Main Footer */}
         <div className="grid gap-14 md:grid-cols-2 lg:grid-cols-4">
-
           {/* Company */}
           <div>
             <HashLink
@@ -50,7 +48,6 @@ function Footer() {
             </p>
 
             <div className="mt-8 flex gap-4">
-
               <a
                 href="https://www.instagram.com/nomikltd/"
                 target="_blank"
@@ -77,15 +74,12 @@ function Footer() {
               >
                 <FaLinkedinIn />
               </a>
-
             </div>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h3 className="mb-6 text-xl font-bold">
-              Quick Links
-            </h3>
+            <h3 className="mb-6 text-xl font-bold">Quick Links</h3>
 
             <ul className="space-y-4">
               {quickLinks.map((link) => (
@@ -104,9 +98,7 @@ function Footer() {
 
           {/* Services */}
           <div>
-            <h3 className="mb-6 text-xl font-bold">
-              Our Services
-            </h3>
+            <h3 className="mb-6 text-xl font-bold">Our Services</h3>
 
             <ul className="space-y-4">
               {services.map((service) => (
@@ -122,25 +114,18 @@ function Footer() {
 
           {/* Contact */}
           <div>
-            <h3 className="mb-6 text-xl font-bold">
-              Contact Information
-            </h3>
+            <h3 className="mb-6 text-xl font-bold">Contact Information</h3>
 
             <div className="space-y-6">
-
               <div className="flex items-start gap-4">
                 <div className="rounded-full bg-white p-3 shadow">
                   <FaPhoneAlt className="text-blue-600" />
                 </div>
 
                 <div>
-                  <p className="font-semibold">
-                    Phone
-                  </p>
+                  <p className="font-semibold">Phone</p>
 
-                  <p className="text-gray-600">
-                    +234 701 319 1227
-                  </p>
+                  <p className="text-gray-600">+234 701 319 1227</p>
                 </div>
               </div>
 
@@ -150,13 +135,9 @@ function Footer() {
                 </div>
 
                 <div>
-                  <p className="font-semibold">
-                    Email
-                  </p>
+                  <p className="font-semibold">Email</p>
 
-                  <p className="text-gray-600">
-                    info@nomikltd.com
-                  </p>
+                  <p className="text-gray-600">nomikltdng@gmail.com</p>
                 </div>
               </div>
 
@@ -166,19 +147,13 @@ function Footer() {
                 </div>
 
                 <div>
-                  <p className="font-semibold">
-                    Office
-                  </p>
+                  <p className="font-semibold">Office</p>
 
-                  <p className="text-gray-600">
-                    Lagos, Nigeria
-                  </p>
+                  <p className="text-gray-600">Lagos, Nigeria</p>
                 </div>
               </div>
-
             </div>
           </div>
-
         </div>
 
         {/* Divider */}
@@ -186,17 +161,13 @@ function Footer() {
 
         {/* Bottom Footer */}
         <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
-
           <p className="text-sm text-gray-600">
             © {new Date().getFullYear()}{" "}
-            <span className="font-semibold text-blue-600">
-              NOMIK LTD
-            </span>
-            . All Rights Reserved.
+            <span className="font-semibold text-blue-600">NOMIK LTD</span>. All
+            Rights Reserved.
           </p>
 
           <div className="flex items-center gap-6">
-
             <HashLink
               smooth
               to="/#home"
@@ -220,11 +191,8 @@ function Footer() {
             >
               <FaArrowUp />
             </HashLink>
-
           </div>
-
         </div>
-
       </div>
     </footer>
   );
