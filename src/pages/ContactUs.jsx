@@ -44,10 +44,11 @@ function ContactUs() {
       className="relative overflow-hidden bg-gradient-to-br from-slate-50 via-white to-blue-50 py-24"
     >
       {/* Background */}
-      <div className="absolute -top-24 -right-24 h-96 w-96 rounded-full bg-blue-100 blur-3xl opacity-50"></div>
-      <div className="absolute bottom-0 left-0 h-80 w-80 rounded-full bg-sky-100 blur-3xl opacity-40"></div>
+      <div className="pointer-events-none absolute -top-24 -right-24 h-96 w-96 rounded-full bg-blue-100 opacity-50 blur-3xl"></div>
 
-      <div className="mx-auto max-w-7xl px-6">
+      <div className="pointer-events-none absolute bottom-0 left-0 h-80 w-80 rounded-full bg-sky-100 opacity-40 blur-3xl"></div>
+
+      <div className="relative z-10 mx-auto max-w-7xl px-6">
         {/* Heading */}
 
         <div className="mb-20 text-center">
@@ -141,7 +142,7 @@ function ContactUs() {
 
           {/* RIGHT */}
 
-          <div className="rounded-3xl bg-white p-8 shadow-xl">
+          <div className="relative z-20 rounded-3xl bg-white p-8 shadow-xl">
             <h3 className="text-3xl font-bold">Send Us a Message</h3>
 
             <p className="mt-3 text-gray-600">
@@ -194,7 +195,7 @@ function ContactUs() {
               <button
                 type="submit"
                 disabled={loading}
-                className="flex w-full items-center justify-center gap-3 rounded-xl bg-blue-500 py-4 font-semibold text-white transition hover:bg-blue-600 disabled:cursor-not-allowed disabled:bg-blue-300"
+                className="relative z-30 flex w-full cursor-pointer items-center justify-center gap-3 rounded-xl bg-blue-500 py-4 font-semibold text-white transition-all duration-300 hover:bg-blue-600 hover:shadow-xl active:scale-95 disabled:cursor-not-allowed disabled:bg-blue-300"
               >
                 {loading ? "Sending..." : "Send Message"}
 
