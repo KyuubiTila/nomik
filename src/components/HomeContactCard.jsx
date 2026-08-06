@@ -3,9 +3,9 @@ import {
   FaEnvelope,
   FaMapMarkerAlt,
   FaClock,
-  FaArrowRight,
   FaCheckCircle,
 } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 function HomeContactCard() {
   return (
@@ -72,16 +72,13 @@ function HomeContactCard() {
             <span className="inline-flex items-center rounded-full bg-green-100 px-4 py-2 text-xs font-semibold text-green-700">
               ● Available for New Projects
             </span>
-
             <h3 className="mt-5 text-3xl font-bold text-gray-900">
               Contact Details
             </h3>
-
             <p className="mt-3 max-w-md leading-7 text-gray-600">
               Speak with our team today and receive a free consultation for your
               next residential, commercial, or industrial project.
             </p>
-
             {/* Contact Grid */}
             <div className="mt-10 grid gap-8 sm:grid-cols-2">
               {/* Phone */}
@@ -152,15 +149,15 @@ function HomeContactCard() {
                 </div>
               </div>
             </div>
-
             {/* CTA */}
-            <a href="/contact">
-              <button className="mt-12 flex items-center gap-3 rounded-xl bg-blue-500 px-8 py-4 font-semibold text-white transition duration-300 hover:-translate-y-1 hover:bg-blue-600 hover:shadow-xl">
-                Send Us a Message
-                <FaArrowRight />
-              </button>
-            </a>
 
+            <Link
+              to="/blog"
+              className="inline-flex w-fit items-center gap-2 rounded-lg border border-blue-400 px-8 py-4 font-semibold transition bg-blue-500 hover:bg-blue-500 hover:text-white"
+            >
+              Send Us a Message
+              <span>→</span>
+            </Link>
             <p className="mt-5 text-sm text-gray-500">
               We usually respond within
               <span className="font-semibold text-blue-600"> 24 hours.</span>

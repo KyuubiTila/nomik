@@ -1,7 +1,8 @@
 import mainImage from "../assets/images/project1.jpg";
 import topImage from "../assets/images/project2.jpg";
 import bottomImage from "../assets/images/project3.jpg";
-import { FaUsers } from "react-icons/fa";
+import { FaArrowRight, FaUsers } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 function About() {
   return (
@@ -39,11 +40,16 @@ function About() {
             renovation, remodeling and civil engineering works with quality,
             integrity and innovation.
           </p>
-          <a href="/blog">
-            <button className="w-fit rounded-lg border border-blue-400 px-8 py-4 font-semibold transition hover:bg-blue-500 hover:text-white">
-              LEARN MORE ABOUT US →
-            </button>
-          </a>
+          <Link
+            to="/blog"
+            className="inline-flex w-fit items-center gap-2 rounded-lg border border-blue-400 px-8 py-4 font-semibold transition hover:bg-blue-500 hover:text-white"
+          >
+            LEARN MORE ABOUT US
+            <span>
+              {" "}
+              <FaArrowRight />
+            </span>
+          </Link>
         </div>
 
         {/* Right */}
