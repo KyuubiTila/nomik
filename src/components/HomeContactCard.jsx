@@ -4,6 +4,7 @@ import {
   FaMapMarkerAlt,
   FaClock,
   FaCheckCircle,
+  FaArrowRight,
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
@@ -150,14 +151,18 @@ function HomeContactCard() {
               </div>
             </div>
             {/* CTA */}
-
-            <Link
-              to="/contact"
-              className="inline-flex w-fit items-center mt-4 gap-2 rounded-lg border border-blue-400 px-8 py-4 font-semibold transition bg-blue-500 hover:bg-blue-500 hover:text-white"
-            >
-              Send Us a Message
-              <span>→</span>
-            </Link>
+            <div className="mt-10 flex flex-wrap gap-5">
+              <Link
+                to="/contact"
+                className="inline-flex w-fit items-center gap-2 rounded-lg border bg-blue-500 border-blue-400 px-8 py-4 font-semibold transition hover:bg-blue-500 hover:text-white"
+              >
+                Send Us a Message
+                <span>
+                  {" "}
+                  <FaArrowRight />
+                </span>
+              </Link>
+            </div>
             <p className="mt-5 text-sm text-gray-500">
               We usually respond within
               <span className="font-semibold text-blue-600"> 24 hours.</span>
